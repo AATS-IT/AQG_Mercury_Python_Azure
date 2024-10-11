@@ -1,0 +1,9 @@
+Model,Response,Optimal_Threshold
+opdead,opdead,0.024435259059886572
+losopg14,losopg14,0.10264474083055472
+ev_print,ev_print,0.11710773077724526
+ev_dsinf,ev_dsinf,0.00232014149059582
+ev_strok,ev_strok,0.01696585976153015
+ev_reop,ev_reop,0.03208870356330554
+ev_renal,ev_renal,0.02470606616929026
+ev_mm,ev_mm,0.14240216569130937
