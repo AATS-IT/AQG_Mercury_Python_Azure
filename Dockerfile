@@ -13,6 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the FastAPI app code and models to the container
 COPY inference_api.py .
+COPY inference_api_protected.py .
 COPY models/ ./models/
 # COPY temp_files/ ./temp_files/
 # Create temp_files directory if it doesn't exist
@@ -22,4 +23,5 @@ RUN mkdir -p ./temp_files
 EXPOSE 8000
 
 # Run the FastAPI app with uvicorn
-CMD ["uvicorn", "inference_api:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+# CMD ["uvicorn", "inference_api:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "inference_api_protected:app", "--host", "0.0.0.0", "--port", "8001", "--reload"]
